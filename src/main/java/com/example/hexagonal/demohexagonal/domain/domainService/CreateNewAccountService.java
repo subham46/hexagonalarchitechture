@@ -1,8 +1,8 @@
-package domainService;
+package com.example.hexagonal.demohexagonal.domain.domainService;
 
-import domain.UserAccount;
-import port.inport.CreateNewAccountPort;
-import port.outport.NewAccountSaveRepository;
+import com.example.hexagonal.demohexagonal.domain.entity.UserAccount;
+import com.example.hexagonal.demohexagonal.domain.port.inport.CreateNewAccountPort;
+import com.example.hexagonal.demohexagonal.domain.port.outport.NewAccountSaveRepository;
 
 public class CreateNewAccountService implements CreateNewAccountPort {
 
