@@ -1,10 +1,8 @@
 package com.example.hexagonal.demohexagonal.domain.entity;
 
 
-import lombok.Getter;
 import org.springframework.data.annotation.Id;
 
-@Getter
 public class UserAccount {
 
     @Id
@@ -18,5 +16,36 @@ public class UserAccount {
         this.balance = balance;
     }
 
+    public long getAccountId() {
+        return accountId;
+    }
 
+    public void setAccountId(long accountId) {
+        this.accountId = accountId;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public long getBalance() {
+        return balance;
+    }
+
+    public void setBalance(long balance) {
+        this.balance = balance;
+    }
+
+    @Override
+    public String toString() {
+        return "UserAccount{" +
+                "accountId=" + accountId +
+                ", name='" + name + '\'' +
+                ", balance=" + balance +
+                '}';
+    }
 }
